@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="/auditory-eeg-challenge-2023/style.css" />
 <meta property="og:title" content="Task 1: Match-mismatch" />
-<meta property="og:description" content="Task 1: Match-mismatch" />
+<meta property="og:description" content="given and EEG segment and two stimuli, classify which one of the input segments corresponds to the EEG" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://exporl.github.io/auditory-eeg-challenge-2023/task1/" /><meta property="article:section" content="" />
 
@@ -31,7 +31,7 @@
                 <li class="current">
                     <a href="/auditory-eeg-challenge-2023/task1/">Task 1: Match-mismatch</a>
                 <li class="">
-                    <a href="/auditory-eeg-challenge-2023/task2/">Task 2: regression</a>
+                    <a href="/auditory-eeg-challenge-2023/task2/">Task 2: Regression</a>
         </ul>
     </nav>
 </div>
@@ -46,7 +46,7 @@
                                 <article>
     <header>
         <h2>Task 1: Match-mismatch</h2>
-        <p>Task 1: Match-mismatch</p>
+        <p>given and EEG segment and two stimuli, classify which one of the input segments corresponds to the EEG</p>
         
         
         <ul class="tags">
@@ -62,8 +62,8 @@
 (1) a segment of EEG,
 (2) the time-aligned speech stimulus (match)
 (3) an imposter stimulus (mismatch)</p>
-<p>The task of the model is to determine which of the input envelope segments corresponds to the EEG. The performance metric is the classification accuracy (%).</p>
-<p>The input length of all (EEG, envelope) pairs is 3 s. We define the mismatched stimulus to be temporally close to the matched one
+<p>The task of the model is to determine which of the input stimulus segments corresponds to the EEG. The performance metric is the classification accuracy (%).</p>
+<p>The input length of all (EEG, envelope) pairs is 3s. We define the mismatched stimulus to be temporally close to the matched one
 by taking the segment starting either one second after the end of the matched segment or 4 seconds before the start of the matched segment.
 Figure 2 contains an overview of the provided code and our recommended starting flow. We provide code to generate an envelope and
 mel spectrogram representation from the raw audio files. However, participants can freely perform audio processing and use their preferred
