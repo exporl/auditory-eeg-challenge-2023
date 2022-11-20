@@ -52,13 +52,23 @@
         <ul class="tags">
 </ul>
 
-    </header><h1 id="description">Description</h1>
+    </header><figure><img src="../images/task_regression.png"/><figcaption>
+            <h4>Schematic overview of the regression task</h4>
+        </figcaption>
+</figure>
+
+<h1 id="description">Description</h1>
 <p>Task 2 is a regression problem: To reconstruct the stimulus from the EEG. After reconstruction, a metric to measure the similarity is used
 between the reconstructed stimulus and the original stimulus. In this task, we use the Pearson correlation.</p>
 <p>For this task, the stimulus representation is defined as the envelope, as described in the preprocessing section and as defined by the provided code.
 Participants are free to create their methods. However, remember that the stimulus
 objective is fixed, as defined by the python file envelope.py.</p>
-<h1 id="baseline">Baseline</h1>
+<p>The code for this task can be found on our <a href="https://github.com/exporl/auditory-eeg-challenge-2023-code">github repository</a></p>
+<h1 id="baseline-hahahugoshortcode-s1-hbhb">Baseline <figure><img src="../images/code_flow_regression.png"/><figcaption>
+            <h4>provided code files and suggested starting point for the regresssion task</h4>
+        </figcaption>
+</figure>
+</h1>
 <p>As a first baseline, we include a linear backward model. The linear model
 reconstructs the speech envelope from EEG by using a linear transformation across all
 channels and a certain time (the integration window). We use an integration window of 400ms.
@@ -85,6 +95,11 @@ entry in the submitted dictionary should be of the form (EEG ID) : (Reconstructe
 <p>A correlation value of 0 will be taken in case of
 absent EEG ID entries. The reconstructed envelope should be of dimensions 1 x 3840 (i.e., 60 seconds of data at the prescribed sample rate
 of 64 Hz).</p>
+<figure><img src="../images/score_regression.png"/><figcaption>
+            <h4>Final score calculation</h4>
+        </figcaption>
+</figure>
+
 
 
                                 </article>
