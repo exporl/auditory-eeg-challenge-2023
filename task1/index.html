@@ -75,11 +75,16 @@ A way to do this is to ensure that the shift when windowing (1s in our code) is 
 segment (1s). Failing to follow these suggestions is likely to result in models simply remembering the training samples and thus failing to
 generalize to the test set.</p>
 <p>The code for this task can be found on our <a href="https://github.com/exporl/auditory-eeg-challenge-2023-code">github repository</a></p>
-<figure><img src="../images/code_flow_classification.png"/><figcaption>
+<p><figure><img src="../images/code_flow_prepro.png"/><figcaption>
             <h4>provided code files and suggested starting point for the Match-mismatch task</h4>
         </figcaption>
 </figure>
 
+<figure><img src="../images/code_flow_classification.png"/><figcaption>
+            <h4>provided code files and suggested starting point for the Match-mismatch task</h4>
+        </figcaption>
+</figure>
+</p>
 <h1 id="baseline">Baseline</h1>
 <p>We include a <a href="https://ieeexplore.ieee.org/abstract/document/9287417?casa_token=t5BXK65duSYAAAAA:10B8PKULBXtxlxTZ6C_w1KoBIsELHfnkj4-QQ8EogEitMLnYKJmXcmZUabLF1AwyiO-qU3f-KKuc">dilated convolutional network</a>  as a baseline for task 1. The dilated convolutional network consists of four steps. First, the
 EEG channels are combined, from 64 to 8, using a 1D convolutional layer with a kernel size of 1 and a filter size of 8. Second, there are
