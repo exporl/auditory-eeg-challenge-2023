@@ -22,8 +22,7 @@
       
       <guid>https://exporl.github.io/auditory-eeg-challenge-2023/registration/</guid>
       <description>Registration Teams can register by sending a mail to auditoryeegchallenge@kuleuven.be with the names of the team members, emails, and affiliations. Upon confirmation, teams will receive access to the training data.
-#Guidelines for participants
-Participants can submit their predictions up to five times. The latest received submission counts as the official score. The Audio-EEG challenge features two separate tasks. Participants can submit to either one track or both. Results should be accom- panied by a 2-page paper describing the proposed method The top 5 ranked teams will be invited to submit a 2-page paper, to be presented at ICASSP-2023, which should be submitted before the camera-ready deadline.</description>
+Guidelines for participants Participants can submit their predictions up to five times. The latest received submission counts as the official score. The Audio-EEG challenge features two separate tasks. Participants can submit to either one track or both. Results should be accom- panied by a 2-page paper describing the proposed method The top 5 ranked teams will be invited to submit a 2-page paper, to be presented at ICASSP-2023, which should be submitted before the camera-ready deadline.</description>
     </item>
     
     <item>
