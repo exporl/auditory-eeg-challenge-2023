@@ -66,10 +66,28 @@ matches the EEG?</p>
 We provide the dataset, code for preprocessing the EEG and for creating commonly used stimulus
 representations, and two baseline methods.</p>
 <p>Teams can register by sending a mail to
-<a href="mailto:auditoryeegchallenge@kuleuven.be">auditoryeegchallenge@kuleuven.be</a> with the names of the team members, emails, and affiliations.</p>
+<a href="auditoryeegchallenge@kuleuven.be">auditoryeegchallenge@kuleuven.be</a> with the names of the team members, emails, and affiliations.
+The intellectual property (IP) is not transferred to the challenge organizers, i.e. if the code is shared/submitted, the participants remain
+the owners of their code.</p>
 </div>
-            <div class=""><h2 id="leaderboard">Leaderboard</h2>
-<p>The leaderboard will be updated starting from January 6, 2023, when the test sets will be released.</p>
+            <div class=""><h2 id="get-started">Get started</h2>
+<ol>
+<li>
+<p>Send a mail to <a href="auditoryeegchallenge@kuleuven.be">auditoryeegchallenge@kuleuven.be</a> with the names of the team members, emails, and affiliations. You will receive a password to download the data</p>
+</li>
+<li>
+<p>Download the data from <a href="https://kuleuven-my.sharepoint.com/:f:/g/personal/lies_bollens_kuleuven_be/EkaIjOmoPIRHmYLdLK8b2VQBY_2ouqNSnHHTHyRl3Zn-2w?e=KhX7d0">ICASSP-2023-eeg-decoding-challenge-dataset</a></p>
+<ul>
+<li><strong>split_data(.zip)</strong> contains already preprocessed, split and normalized data; ready for model training/evaluation. If you want to get started quickly, you can opt to only download this folder/zipfile.</li>
+<li><strong>preprocessed_eeg(.zip)</strong> and <strong>preprocessed_stimuli(.zip)</strong> contain preprocessed EEG and stimuli files (envelope and mel features) respectively. At this stage data is not yet split into different sets and normalized. To go from this to the data in split_data, you will have to run run_splitting_and_normalization.py.</li>
+<li><strong>raw_eeg(_x.zip)</strong> and <strong>stimuli(.zip)</strong> contain the raw EEG and stimuli files. If you want to process the stimuli files, you can run run_preprocessing.py. The processed stimuli files will be stored in the processed_stimuli. Currently, no preprocessing code is made available to preprocess EEG, so you will have to write your own implementation or use the precomputed processed_eeg folder.</li>
+</ul>
+</li>
+<li>
+<p>Clone the starting code from our <a href="https://github.com/exporl/auditory-eeg-challenge-2023-code">github repository</a> and get started.
+The repository contains preprocessing code, as well as baseline models for each of the tasks.</p>
+</li>
+</ol>
 </div>
             <div class=""><h2 id="timeline">Timeline</h2>
 <ul>
