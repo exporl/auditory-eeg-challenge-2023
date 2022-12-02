@@ -61,8 +61,8 @@
 <p>Download the data from <a href="https://kuleuven-my.sharepoint.com/:f:/g/personal/lies_bollens_kuleuven_be/EkaIjOmoPIRHmYLdLK8b2VQBY_2ouqNSnHHTHyRl3Zn-2w?e=KhX7d0">ICASSP-2023-eeg-decoding-challenge-dataset</a></p>
 <ul>
 <li><strong>split_data(.zip)</strong> contains already preprocessed, split and normalized data; ready for model training/evaluation. If you want to get started quickly, you can opt to only download this folder/zipfile.</li>
-<li><strong>preprocessed_eeg(.zip)</strong> and <strong>preprocessed_stimuli(.zip)</strong> contain preprocessed EEG and stimuli files (envelope and mel features) respectively. At this stage data is not yet split into different sets and normalized. To go from this to the data in split_data, you will have to run run_splitting_and_normalization.py.</li>
-<li><strong>raw_eeg(_x.zip)</strong> and <strong>stimuli(.zip)</strong> contain the raw EEG and stimuli files. If you want to process the stimuli files, you can run run_preprocessing.py. The processed stimuli files will be stored in the processed_stimuli. Currently, no preprocessing code is made available to preprocess EEG, so you will have to write your own implementation or use the precomputed processed_eeg folder.</li>
+<li><strong>preprocessed_eeg(.zip)</strong> and <strong>preprocessed_stimuli(.zip)</strong> contain preprocessed EEG and stimuli files ( speech envelope and mel spectrogram features) respectively. At this stage data is not yet split into different sets and not normalized. To go from this to the data in <strong>split_data.zip</strong>, you will have to run <em>task*/create_data/split_and_normalize.py</em> for the task you want to work on.</li>
+<li><strong>raw_eeg(_x.zip)</strong> and <strong>stimuli(.zip)</strong> contain the raw EEG and stimuli files. If you want to process the stimuli files, you can run <em>task*/create_data/speech_features.py</em>. Speech Envelope and/or mel spectrogram features will be stored in the processed_stimuli. Currently, no preprocessing code is made available to preprocess EEG, so you will have to write your own implementation or use the precomputed processed_eeg folder.</li>
 </ul>
 </li>
 <li>
