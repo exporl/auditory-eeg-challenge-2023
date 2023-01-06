@@ -48,6 +48,16 @@ For this task, the stimulus representation is defined as the envelope, as descri
     </item>
     
     <item>
+      <title></title>
+      <link>https://exporl.github.io/auditory-eeg-challenge-2023/test_set/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://exporl.github.io/auditory-eeg-challenge-2023/test_set/</guid>
+      <description>task 1
+task2</description>
+    </item>
+    
+    <item>
       <title>General description</title>
       <link>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/general_description/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
