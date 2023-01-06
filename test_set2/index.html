@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
 
-<title>Timeline | ICASSP 2023: Auditory EEG challenge</title>
+<title>Test Set Task 2 | ICASSP 2023: Auditory EEG challenge</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="/auditory-eeg-challenge-2023/style.css" />
-<meta property="og:title" content="Timeline" />
-<meta property="og:description" content="Timeline" />
+<meta property="og:title" content="Test Set Task 2" />
+<meta property="og:description" content="description of the test set for task 2" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/timeline/" /><meta property="article:section" content="homepage_sections" />
+<meta property="og:url" content="https://exporl.github.io/auditory-eeg-challenge-2023/test_set2/" /><meta property="article:section" content="" />
 
 
 
@@ -34,7 +34,7 @@
                     <a href="/auditory-eeg-challenge-2023/task2/">Task 2: Regression</a>
                 <li class="">
                     <a href="/auditory-eeg-challenge-2023/test_set/">Test Set Task 1</a>
-                <li class="">
+                <li class="current">
                     <a href="/auditory-eeg-challenge-2023/test_set2/">Test Set Task 2</a>
         </ul>
     </nav>
@@ -49,25 +49,28 @@
                             <div id="content">
                                 <article>
     <header>
-        <h2>Timeline</h2>
-        <p>Timeline</p>
+        <h2>Test Set Task 2</h2>
+        <p>description of the test set for task 2</p>
         
         
         <ul class="tags">
 </ul>
 
-    </header><h2 id="timeline">Timeline</h2>
-<ul>
-<li>November 21, 2022: Registration opens</li>
-<li>November 21, 2022: Release of training set, code, baseline methods and documentation</li>
-<li>January 6, 2023: Release of evaluation test set</li>
-<li>February 6, 2023: Deadline for submitting results for both tasks</li>
-<li>February 20, 2023: ICASSP 2023 grand challenge 2-page paper deadline (top 5 teams only)</li>
-<li>March 7, 2023: ICASSP 2023 grand challenge 2-page paper acceptance notification</li>
-<li>March 14, 2023: ICASSP 2023 grand challenge 2-page camera-ready deadline</li>
-<li>June 4-8, 2023: ICASSP 2023 conference</li>
-<li>August 9, 2023: IEEE open journal of signal processing grand challenge papers deadline</li>
-</ul>
+    </header><h1 id="task-2">task 2</h1>
+<h3 id="expected-output">Expected Output</h3>
+<p>As an output, participants should upload a zip file, containing json files to <a href="https://kuleuven-my.sharepoint.com/:f:/g/personal/lies_bollens_kuleuven_be/EhUxPLaiLjBInBAHEY3NNmYBVZMF8W-FtHojulxtY0k7RQ">the following link</a>
+The files should follow the following naming convention:</p>
+<p>task_2_group_<strong>group_name</strong>_submission _<strong>submission_number</strong>.zip</p>
+<p>where <strong>submission_number</strong> should be 1 for
+the first submission and can go up to 5. We will use the latest submission as the final submission, from which the ranking will be calculated. Groups that have not yet supplied their group name, should send a mail to the
+organisers where they specify their name. When uploading, you will be prompted to enter a name. Please enter the name of one of the officially registered participants.</p>
+<p>The json file(s) should contain the predicted labels for all EEG segments.Each entry in the submitted dictionary should be of the form (EEG ID) : (Reconstructed Envelope).</p>
+<p>A correlation value of 0 will be taken in case of absent EEG ID entries. The reconstructed envelope should be of dimensions 1 x 3840 (i.e., 60 seconds of data at the prescribed sample rate
+of 64 Hz).
+We provide the script <a href="">predict_test.py</a>, which loads a pretrained model, loops over all the data of the test set, predicts the output labels and returns json files
+in the correct format.</p>
+<p>For evaluation, we will calculate the mean correlation score per subject. Then, we will calculate the mean over all the subjects means for both
+test set 1 and test set 2 and add them to obtain a final <strong>score</strong>, which will be updated in the online leaderboard.</p>
 
 
                                 </article>

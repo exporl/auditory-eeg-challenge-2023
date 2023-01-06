@@ -13,7 +13,8 @@
     <loc>https://exporl.github.io/auditory-eeg-challenge-2023/task2/</loc>
   </url><url>
     <loc>https://exporl.github.io/auditory-eeg-challenge-2023/test_set/</loc>
-    <priority>0</priority>
+  </url><url>
+    <loc>https://exporl.github.io/auditory-eeg-challenge-2023/test_set2/</loc>
   </url><url>
     <loc>https://exporl.github.io/auditory-eeg-challenge-2023/categories/</loc>
   </url><url>

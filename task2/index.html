@@ -32,6 +32,10 @@
                     <a href="/auditory-eeg-challenge-2023/task1/">Task 1: Match-mismatch</a>
                 <li class="current">
                     <a href="/auditory-eeg-challenge-2023/task2/">Task 2: Regression</a>
+                <li class="">
+                    <a href="/auditory-eeg-challenge-2023/test_set/">Test Set Task 1</a>
+                <li class="">
+                    <a href="/auditory-eeg-challenge-2023/test_set2/">Test Set Task 2</a>
         </ul>
     </nav>
 </div>
@@ -85,7 +89,7 @@ as calculated by the provided envelope script, using Pearson correlation. We wil
 function to calculate the correlation value for each segment.</p>
 <p>Afterwards, the mean correlation value per subject is calculated. Then, we calculate the mean correlation values over all subjects for test set 1 and test set
 2 and add both scores to obtain a final score, which will serve as the final ranking value.</p>
-<p>Participants should submit a NumPy dictionary file for the test set to an online form on our website, which contains the reconstructed
+<p>Participants should submit a json dictionary file for the test set to an online form on our website, which contains the reconstructed
 envelopes for all EEG segments. Afterward, we will calculate the score mentioned above and update this in the online leaderboard. Each
 entry in the submitted dictionary should be of the form (EEG ID) : (Reconstructed Envelope).</p>
 <p>A correlation value of 0 will be taken in case of
