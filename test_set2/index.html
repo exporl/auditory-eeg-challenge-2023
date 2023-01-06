@@ -57,6 +57,24 @@
 </ul>
 
     </header><h1 id="task-2">task 2</h1>
+<hr>
+<h3 id="provided-test-data">Provided test data</h3>
+<p>The test data for this task can be downloaded from <a href="/http">here</a>.
+The directory contains the following items:</p>
+<ol>
+<li>
+<p><strong>Preprocessed EEG test samples</strong>:  The main directory contains 84 subjects&rsquo; test data in the format
+of subject_name.json. Note that there is no test data for sub-001. Each json file contains a python dictionary with samples
+IDs as keys and EEG segments of one minute as values. The preprocessed EEG segments are at 64 Hz sampling rate. You probably need
+to convert EEG segments from list to numpy array.</p>
+</li>
+<li>
+<p><strong>raw_eeg</strong>:
+We also provide the corresponding raw EEG files for each subject. If you prefer to have access
+to the raw EEG and do your own preprocessing, then you can use this directory. The json files in this directory have exactly
+the same format as of the preprocessed EEG files. Sampling rate of the raw EEG is 1024 Hz.</p>
+</li>
+</ol>
 <h3 id="expected-output">Expected Output</h3>
 <p>As an output, participants should upload a zip file, containing json files to <a href="https://kuleuven-my.sharepoint.com/:f:/g/personal/lies_bollens_kuleuven_be/EhUxPLaiLjBInBAHEY3NNmYBVZMF8W-FtHojulxtY0k7RQ">the following link</a>
 The files should follow the following naming convention:</p>
