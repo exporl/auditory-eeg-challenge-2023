@@ -53,9 +53,8 @@ For this task, the stimulus representation is defined as the envelope, as descri
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://exporl.github.io/auditory-eeg-challenge-2023/test_set/</guid>
-      <description>task 1 Expected output As an output, participants should upload a zip file, containing json files to the following link The files should follow the following naming convention:
-task_1_group_group_name_submission _submission_number.zip
-where submission_number should be 1 for the first submission and can go up to 5. We will use the latest submission as the final submission, from which the ranking will be calculated. Groups that have not yet supplied their group name, should send a mail to the organisers where they specify their name.</description>
+      <description>task 1 Provided test dataset The test data for this task can be downloaded from here. The directory contains following items:
+Preprocessed EEG test samples: The main directory contains 84 subjects&amp;rsquo; test data in the format of subject_name.json. Note that there is no test data for sub-001. Each json file contains a python dictionary with sample IDs as keys and tuples in the format of (EEG, speech1, speech2) as values. First element of the tuple is preprocessed EEG of 3 seconds long with fs=64 Hz.</description>
     </item>
     
     <item>
