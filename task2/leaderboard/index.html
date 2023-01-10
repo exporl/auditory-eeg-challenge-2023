@@ -2,14 +2,16 @@
 <html lang="en">
     <head>
 
-<title>Task2s | ICASSP 2023: Auditory EEG challenge</title>
+<title>leaderboard | ICASSP 2023: Auditory EEG challenge</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="/auditory-eeg-challenge-2023/style.css" />
-<meta property="og:title" content="Task2s" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://exporl.github.io/auditory-eeg-challenge-2023/task2/" />
+<meta property="og:title" content="leaderboard" />
+<meta property="og:description" content="leaderboard for task 2" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://exporl.github.io/auditory-eeg-challenge-2023/task2/leaderboard/" /><meta property="article:section" content="task2" />
+
+
 
 </head>
     <body class="is-preload">
@@ -56,56 +58,58 @@
                             <div id="content">
                                 <article>
     <header>
-        <h2>Task2s</h2>
+        <h2>leaderboard</h2>
+        <p>leaderboard for task 2</p>
         
-    </header>
+        
+        <ul class="tags">
+</ul>
 
-    
-        <section class="col-6 col-12-narrower">
-    <div class="box post">
-        <a href="/auditory-eeg-challenge-2023/task2/leaderboard/" class="image left"><img src="/auditory-eeg-challenge-2023/" alt="" /></a>
-        <div class="inner">
-            <h3><a href="/auditory-eeg-challenge-2023/task2/leaderboard/">leaderboard</a></h3>
-            
-            
-            <p>
-                leaderboard for task 2
-            </p>
-        </div>
-    </div>
-</section>
+    </header><hr>
 
-    
-        <section class="col-6 col-12-narrower">
-    <div class="box post">
-        <a href="/auditory-eeg-challenge-2023/task2/description/" class="image left"><img src="/auditory-eeg-challenge-2023/" alt="" /></a>
-        <div class="inner">
-            <h3><a href="/auditory-eeg-challenge-2023/task2/description/">Task 2: Regression</a></h3>
-            
-            
-            <p>
-                Reconstruct the stimulus from the EEG
-            </p>
-        </div>
-    </div>
-</section>
 
-    
-        <section class="col-6 col-12-narrower">
-    <div class="box post">
-        <a href="/auditory-eeg-challenge-2023/task2/test_set/" class="image left"><img src="/auditory-eeg-challenge-2023/" alt="" /></a>
-        <div class="inner">
-            <h3><a href="/auditory-eeg-challenge-2023/task2/test_set/">Test Set Task 2</a></h3>
-            
-            
-            <p>
-                description of the test set for task 2
-            </p>
-        </div>
-    </div>
-</section>
 
-    
+
+
+
+<div style="width: 100%;height: 300px;margin: 0 auto">
+    <canvas id="ce81dcfccfa4cd45cd24cfa85bd4eb86"></canvas>
+</div>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+<script type="text/javascript">
+    var ctx = document.getElementById('ce81dcfccfa4cd45cd24cfa85bd4eb86').getContext('2d');
+    var options = 
+{
+    type: 'bar',
+    data: {
+        labels: ['Baseline'],
+        datasets: [{
+            label: 'Results for task 2: Regression',
+            data: [0.13578],
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)'
+            ],
+            borderColor: [
+                'rgba(255, 99, 132, 1)'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        maintainAspectRatio: false,
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+};
+    new Chart(ctx, options);
+</script>
+
 
 
                                 </article>
