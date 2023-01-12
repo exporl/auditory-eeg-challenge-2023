@@ -73,33 +73,69 @@
 
 
 <div style="width: 100%;height: 300px;margin: 0 auto">
-    <canvas id="ce81dcfccfa4cd45cd24cfa85bd4eb86"></canvas>
+    <canvas id="ccd4e4bffe1cac86dfdca854d4825cbc"></canvas>
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
 
-<script type="text/javascript">
-    var ctx = document.getElementById('ce81dcfccfa4cd45cd24cfa85bd4eb86').getContext('2d');
-    var options = 
-{
+<script type="module">
+     import data from '../scores_task2.json' assert { type: 'json' };
+    console.log(data);
+
+    
+    var items = Object.keys(data).map(
+        (key) => {return [key, data[key]]}
+    );
+
+    
+     items.sort(
+         (first, second) => {return first[1]['total'] - second[1]['total']}
+     );
+
+     
+     var groupNames = items.map(
+         (e) => {return e[0]}
+     );
+
+     
+     var results = items.map(
+         (e) => {return e[1]['total']}
+     );
+
+    var ctx = document.getElementById('ccd4e4bffe1cac86dfdca854d4825cbc').getContext('2d');
+    var options = {
     type: 'bar',
     data: {
-        labels: ['Baseline'],
+        labels: groupNames,
         datasets: [{
-            label: 'Results for task 2: Regression',
-            data: [0.13578],
-            backgroundColor: [
+            label: 'Results for task 2:Regression',
+            data: results,
+            backgroundColor:
                 'rgba(255, 99, 132, 0.2)'
-            ],
-            borderColor: [
+            ,
+            borderColor:
                 'rgba(255, 99, 132, 1)'
-            ],
+            ,
             borderWidth: 1
         }]
     },
     options: {
         maintainAspectRatio: false,
+        responsive: true,
+        title: {
+            display: true,
+            text: 'Test set total score for Task2: regression'
+        },
+
         scales: {
+            xAxes: [{scaleLabel: {
+                    display: true,
+                    labelString: 'group name'
+                }}],
             yAxes: [{
+                scaleLabel: {
+                    display: true,
+                    labelString: 'Pearson correlation '
+                },
                 ticks: {
                     beginAtZero: true
                 }
