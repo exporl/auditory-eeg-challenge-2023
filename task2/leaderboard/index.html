@@ -82,7 +82,7 @@
 
 <div style="width: 100%;height: 300px;margin: 0 auto">
 
-    <canvas id="cdcdcac4c42dab5f5d8fc1b4cf68ee84"></canvas>
+    <canvas id="dcede6dfbf4b84ccd1844cc5ccaa2f85"></canvas>
 </div>
 <div id="container" style="width: 100%;height: 300px;margin: 0 auto">
 
@@ -94,7 +94,7 @@
 <script type="module">
 
      import data from '../scores_task2.json' assert { type: 'json' };
-    console.log(data);
+
 
     
     var items = Object.keys(data).map(
@@ -125,7 +125,7 @@
      );
 
 
-    var ctx = document.getElementById('cdcdcac4c42dab5f5d8fc1b4cf68ee84').getContext('2d');
+    var ctx = document.getElementById('dcede6dfbf4b84ccd1844cc5ccaa2f85').getContext('2d');
     var options = {
     type: 'bar',
     data: {
@@ -181,7 +181,7 @@
         backgroundColor: 'rgba(255,0,0,0.5)',
         borderColor: 'red',
         borderWidth: 1,
-        outlierColor: '#999999',
+        outlierColor: 'rgba(255,0,0,0.5)',
         padding: 10,
         itemRadius: 0,
         data: withinResults
@@ -190,7 +190,7 @@
         backgroundColor:  'rgba(0,0,255,0.5)',
         borderColor: 'blue',
         borderWidth: 1,
-        outlierColor: '#999999',
+        outlierColor: 'rgba(0,0,255,0.5)',
         padding: 10,
         itemRadius: 0,
         data:heldoutResults

@@ -81,7 +81,7 @@
 <script src="https://exporl.github.io/auditory-eeg-challenge-2023/js/vendor.min.736ee54e3a51f67df2161c29034041adf68cf9bbf8413bfbb7a3e8bb1d631150.js"></script>
 
 <div style="width: 100%;height: 300px;margin: 0 auto">
-    <canvas id="8bffc6ade8fdc8d454e44a5cc12ccdbc"></canvas>
+    <canvas id="c5c5214ff4dded8dbca88cfacecb464c"></canvas>
 </div>
 
 <div id="container" style="width: 100%;height: 300px;margin: 0 auto">
@@ -91,7 +91,7 @@
 
 <script type="module">
      import data from '../scores_task1.json' assert { type: 'json' };
-    console.log(data);
+
 
     
     var items = Object.keys(data).map(
@@ -121,11 +121,8 @@
          (e) => {return e[1]['heldout']}
      );
 
-     console.log(withinResults);
-     console.log(heldoutResults);
 
-
-    var ctx = document.getElementById('8bffc6ade8fdc8d454e44a5cc12ccdbc').getContext('2d');
+    var ctx = document.getElementById('c5c5214ff4dded8dbca88cfacecb464c').getContext('2d');
     var options = {
     type: 'bar',
     data: {
@@ -183,7 +180,7 @@
         backgroundColor: 'rgba(255,0,0,0.5)',
         borderColor: 'red',
         borderWidth: 1,
-        outlierColor: '#999999',
+        outlierColor: 'rgba(255,0,0,0.5)',
         padding: 10,
         itemRadius: 0,
         data: withinResults
@@ -192,7 +189,7 @@
         backgroundColor:  'rgba(0,0,255,0.5)',
         borderColor: 'blue',
         borderWidth: 1,
-        outlierColor: '#999999',
+        outlierColor: 'rgba(0,0,255,0.5)',
         padding: 10,
         itemRadius: 0,
         data:heldoutResults
