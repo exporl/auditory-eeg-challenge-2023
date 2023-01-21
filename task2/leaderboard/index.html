@@ -82,7 +82,7 @@
 
 <div style="width: 100%;height: 300px;margin: 0 auto">
 
-    <canvas id="e84d44cca5af1ec54cb8f6dccdf8d2bc"></canvas>
+    <canvas id="b1dbd4aaecfc4fe8fcc58c265c4c8d4d"></canvas>
 </div>
 <div id="container" style="width: 100%;height: 300px;margin: 0 auto">
 
@@ -93,7 +93,10 @@
 
 <script type="module">
 
-     import data from '../scores_task2.json' assert { type: 'json' };
+     
+     
+     const tmpUrl = "../scores_task2.json";
+     const data = await (await fetch(tmpUrl)).json();
 
 
     
@@ -125,7 +128,7 @@
      );
 
 
-    var ctx = document.getElementById('e84d44cca5af1ec54cb8f6dccdf8d2bc').getContext('2d');
+    var ctx = document.getElementById('b1dbd4aaecfc4fe8fcc58c265c4c8d4d').getContext('2d');
     var options = {
     type: 'bar',
     data: {
