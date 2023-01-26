@@ -82,11 +82,28 @@
 
 <div style="width: 100%;height: 300px;margin: 0 auto">
 
-    <canvas id="2dcc4ccb4daf544e8cfdfc1ca88d56eb"></canvas>
+    <canvas id="cc16acb44b8c452c8eccdf8fdddaf54e"></canvas>
 </div>
 <div id="container" style="width: 100%;height: 300px;margin: 0 auto">
 
   <canvas id="canvas"></canvas>
+</div>
+
+
+<div class="container"><br>
+  <h3>
+    All results
+  </h3>
+  <br>
+  <table>
+    <thead><tr><td><b>Group name</b></td><td><b>Submission number</b></td>
+    <td><b>Within subjects mean </b></td>
+    <td><b>Within subjects std</b></td>
+    <td><b>Heldout subjects mean</b></td>
+    <td><b>Heldout subjects std</b></td>
+    <td><b>total score</b></td></tr></thead>
+    <tr id="root"></tr>
+  </table>
 </div>
 
 
@@ -128,7 +145,7 @@
      );
 
 
-    var ctx = document.getElementById('2dcc4ccb4daf544e8cfdfc1ca88d56eb').getContext('2d');
+    var ctx = document.getElementById('cc16acb44b8c452c8eccdf8fdddaf54e').getContext('2d');
     var options = {
     type: 'bar',
     data: {
@@ -232,6 +249,20 @@
     }
     });
 
+
+
+    
+     const tmpUrl2 = "../scores_task2_means.json";
+     const data_table = await (await fetch(tmpUrl2)).json();
+
+
+    var root = document.getElementById('root');
+      data_table.forEach(element => root.insertAdjacentHTML('beforebegin', `<tr><td>${element.group_name}</td><td>${element.submission}</td>
+<td>${element.within_mean.toFixed(2)}</td>
+<td>${element.within_std.toFixed(2)}</td>
+<td>${element.heldout_mean.toFixed(2)}</td>
+<td>${element.heldout_std.toFixed(2)}</td>
+<td><b>${element.total.toFixed(2)}</b></td></tr>`));
 
 
 
