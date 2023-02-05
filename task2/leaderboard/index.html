@@ -82,7 +82,7 @@
 
 <div style="width: 100%;height: 300px;margin: 0 auto">
 
-    <canvas id="54cfeccbda4dcffd484e25ccd86cba81"></canvas>
+    <canvas id="8fd4ccdfe5c8abbc6c444edd821fc5ac"></canvas>
 </div>
 <div id="container" style="width: 100%;height: 300px;margin: 0 auto">
 
@@ -145,7 +145,7 @@
      );
 
 
-    var ctx = document.getElementById('54cfeccbda4dcffd484e25ccd86cba81').getContext('2d');
+    var ctx = document.getElementById('8fd4ccdfe5c8abbc6c444edd821fc5ac').getContext('2d');
     var options = {
     type: 'bar',
     data: {
@@ -258,11 +258,11 @@
 
     var root = document.getElementById('root');
       data_table.forEach(element => root.insertAdjacentHTML('beforebegin', `<tr><td>${element.group_name}</td><td>${element.submission}</td>
-<td>${element.within_mean.toFixed(2)}</td>
-<td>${element.within_std.toFixed(2)}</td>
-<td>${element.heldout_mean.toFixed(2)}</td>
-<td>${element.heldout_std.toFixed(2)}</td>
-<td><b>${element.total.toFixed(2)}</b></td></tr>`));
+<td>${element.within_mean.toFixed(4)}</td>
+<td>${element.within_std.toFixed(4)}</td>
+<td>${element.heldout_mean.toFixed(4)}</td>
+<td>${element.heldout_std.toFixed(4)}</td>
+<td><b>${element.total.toFixed(4)}</b></td></tr>`));
 
 
 
