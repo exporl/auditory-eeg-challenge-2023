@@ -22,6 +22,15 @@ KU Leuven, ExpORL, Dept. Neurosciences, Leuven, Belgium</description>
     </item>
     
     <item>
+      <title>Timeline</title>
+      <link>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/timeline/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/timeline/</guid>
+      <description>Timeline (anywhere on earth) November 21, 2022: Registration opens November 21, 2022: Release of training set, code, baseline methods and documentation January 6, 2023: Release of evaluation test set February 6, 2023: Deadline for submitting results for both tasks February 20, 2023: ICASSP 2023 grand challenge 2-page paper deadline (top 5 teams only) March 7, 2023: ICASSP 2023 grand challenge 2-page paper acceptance notification March 14, 2023: ICASSP 2023 grand challenge 2-page camera-ready deadline June 4-8, 2023: ICASSP 2023 conference August 9, 2023: IEEE open journal of signal processing grand challenge papers deadline </description>
+    </item>
+    
+    <item>
       <title>Dataset</title>
       <link>https://exporl.github.io/auditory-eeg-challenge-2023/dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -118,15 +127,6 @@ Preprocessed EEG test samples: The main directory contains 84 subjects&amp;rsquo
       <description>Get started Send a mail to auditoryeegchallenge@kuleuven.be with the names of the team members, emails, and affiliations. You will receive a password to download the data
 Download the data from ICASSP-2023-eeg-decoding-challenge-dataset
 split_data(.zip) contains already preprocessed, split and normalized data; ready for model training/evaluation. If you want to get started quickly, you can opt to only download this folder/zipfile. preprocessed_eeg(.zip) and preprocessed_stimuli(.zip) contain preprocessed EEG and stimuli files ( speech envelope and mel spectrogram features) respectively.</description>
-    </item>
-    
-    <item>
-      <title>Timeline</title>
-      <link>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/timeline/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/timeline/</guid>
-      <description>Timeline (anywhere on earth) November 21, 2022: Registration opens November 21, 2022: Release of training set, code, baseline methods and documentation January 6, 2023: Release of evaluation test set February 6, 2023: Deadline for submitting results for both tasks February 20, 2023: ICASSP 2023 grand challenge 2-page paper deadline (top 5 teams only) March 7, 2023: ICASSP 2023 grand challenge 2-page paper acceptance notification March 14, 2023: ICASSP 2023 grand challenge 2-page camera-ready deadline June 4-8, 2023: ICASSP 2023 conference August 9, 2023: IEEE open journal of signal processing grand challenge papers deadline </description>
     </item>
     
   </channel>
