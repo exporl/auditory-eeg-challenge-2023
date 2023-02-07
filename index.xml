@@ -7,6 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language><atom:link href="https://exporl.github.io/auditory-eeg-challenge-2023/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Organizers</title>
+      <link>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/organizers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/organizers/</guid>
+      <description>Organizers Mohammad Jalilpour Monesi 1, 2 (mohammad.jalilpourmonesi@esat.kuleuven.be)
+Lies Bollens 1, 2 (lies.bollens@esat.kuleuven.be)
+Bernd Accou 1, 2
+Hugo Van hamme 1
+Tom Francart 2
+KU Leuven, PSI, Dept. of Electrical engineering (ESAT), Leuven, Belgium
+KU Leuven, ExpORL, Dept. Neurosciences, Leuven, Belgium</description>
+    </item>
+    
+    <item>
       <title>Dataset</title>
       <link>https://exporl.github.io/auditory-eeg-challenge-2023/dataset/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -103,21 +118,6 @@ Preprocessed EEG test samples: The main directory contains 84 subjects&amp;rsquo
       <description>Get started Send a mail to auditoryeegchallenge@kuleuven.be with the names of the team members, emails, and affiliations. You will receive a password to download the data
 Download the data from ICASSP-2023-eeg-decoding-challenge-dataset
 split_data(.zip) contains already preprocessed, split and normalized data; ready for model training/evaluation. If you want to get started quickly, you can opt to only download this folder/zipfile. preprocessed_eeg(.zip) and preprocessed_stimuli(.zip) contain preprocessed EEG and stimuli files ( speech envelope and mel spectrogram features) respectively.</description>
-    </item>
-    
-    <item>
-      <title>Organizers</title>
-      <link>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/organizers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/organizers/</guid>
-      <description>Organizers Mohammad Jalilpour Monesi 1, 2 (mohammad.jalilpourmonesi@esat.kuleuven.be)
-Lies Bollens 1, 2 (lies.bollens@esat.kuleuven.be)
-Bernd Accou 1, 2
-Hugo Van hamme 1
-Tom Francart 2
-KU Leuven, PSI, Dept. of Electrical engineering (ESAT), Leuven, Belgium
-KU Leuven, ExpORL, Dept. Neurosciences, Leuven, Belgium</description>
     </item>
     
     <item>
