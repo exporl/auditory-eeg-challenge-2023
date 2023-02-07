@@ -106,6 +106,21 @@ split_data(.zip) contains already preprocessed, split and normalized data; ready
     </item>
     
     <item>
+      <title>Organizers</title>
+      <link>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/organizers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/organizers/</guid>
+      <description>Organizers Mohammad Jalilpour Monesi 1, 2
+Lies Bollens 1, 2
+Bernd Accou 1, 2
+Hugo Van hamme 1
+Tom Francart 2
+KU Leuven, PSI, Dept. of Electrical engineering (ESAT), Leuven, Belgium
+KU Leuven, ExpORL, Dept. Neurosciences, Leuven, Belgium</description>
+    </item>
+    
+    <item>
       <title>Timeline</title>
       <link>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/timeline/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
