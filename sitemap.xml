@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/organizers/</loc>
-  </url><url>
     <loc>https://exporl.github.io/auditory-eeg-challenge-2023/</loc>
   </url><url>
     <loc>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/timeline/</loc>
@@ -15,6 +13,8 @@
     <loc>https://exporl.github.io/auditory-eeg-challenge-2023/task1/leaderboard/</loc>
   </url><url>
     <loc>https://exporl.github.io/auditory-eeg-challenge-2023/task2/leaderboard/</loc>
+  </url><url>
+    <loc>https://exporl.github.io/auditory-eeg-challenge-2023/homepage_sections/organizers/</loc>
   </url><url>
     <loc>https://exporl.github.io/auditory-eeg-challenge-2023/registration/</loc>
   </url><url>
