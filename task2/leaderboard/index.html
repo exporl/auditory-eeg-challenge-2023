@@ -80,11 +80,11 @@
 
 <script src="https://exporl.github.io/auditory-eeg-challenge-2023/js/vendor.min.736ee54e3a51f67df2161c29034041adf68cf9bbf8413bfbb7a3e8bb1d631150.js"></script>
 
-<div style="width: 100%;height: 300px;margin: 0 auto">
+<div style="width: 100%;height: 600px;margin: 0 auto">
 
-    <canvas id="b1dcd545d4fcecac6ca84bd8fcc2f8e4"></canvas>
+    <canvas id="4485bc4cfccda2cefe4df6a1cb5d8c8d"></canvas>
 </div>
-<div id="container" style="width: 100%;height: 300px;margin: 0 auto">
+<div id="container" style="width: 100%;height: 600px;margin: 0 auto">
 
   <canvas id="canvas"></canvas>
 </div>
@@ -145,7 +145,7 @@
      );
 
 
-    var ctx = document.getElementById('b1dcd545d4fcecac6ca84bd8fcc2f8e4').getContext('2d');
+    var ctx = document.getElementById('4485bc4cfccda2cefe4df6a1cb5d8c8d').getContext('2d');
     var options = {
     type: 'bar',
     data: {
@@ -195,7 +195,7 @@
 
     const boxplotData = {
       
-      labels: groupNames,
+      labels: groupNames.slice(4),
       datasets: [{
         label: 'Test set 1: held-out stories',
         backgroundColor: 'rgba(255,0,0,0.5)',
@@ -204,7 +204,7 @@
         outlierColor: 'rgba(255,0,0,0.5)',
         padding: 10,
         itemRadius: 0,
-        data: withinResults
+        data: withinResults.slice(4)
       }, {
         label: 'Test set 2: held-out subjects',
         backgroundColor:  'rgba(0,0,255,0.5)',
@@ -213,7 +213,7 @@
         outlierColor: 'rgba(0,0,255,0.5)',
         padding: 10,
         itemRadius: 0,
-        data:heldoutResults
+        data:heldoutResults.slice(4)
       }]
     };
     var  ctx = document.getElementById("canvas").getContext("2d");
