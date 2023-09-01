@@ -5,7 +5,7 @@ description: "General description"
 ---
 
 ## This Challenge is finished 
-This webpage describes the ICASSP Auditory EEG version of 2023. This challenge is now closed. Browse to The [new challenge page](https://exporl.github.io/auditory-eeg-challenge-2023/) 
+This webpage describes the ICASSP Auditory EEG version of 2023. This challenge is now closed. Browse to The [new challenge page](https://exporl.github.io/auditory-eeg-challenge-2024/) 
 for the ICASSP Auditory EEG 2024 challenge. This page will not be updated or maintained any further. 
 
 ## Challenge Call 
@@ -33,7 +33,5 @@ matches the EEG?
 We provide the dataset, code for preprocessing the EEG and for creating commonly used stimulus
 representations, and two baseline methods.  
 
-Teams can register by sending a mail to
-[auditoryeegchallenge@kuleuven.be](auditoryeegchallenge@kuleuven.be) with the names of the team members, emails, and affiliations.
 The intellectual property (IP) is not transferred to the challenge organizers, i.e. if the code is shared/submitted, the participants remain 
 the owners of their code. 

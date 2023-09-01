@@ -6,8 +6,8 @@ weight: 80
 ---
 
 # Registration
-Teams can register by sending a mail to
-auditoryeegchallenge@kuleuven.be with the names of the team members, emails, and affiliations. Upon confirmation, teams will receive access to the training data. 
+REGISTRATION FOR THE 2023 CHALLENGE IS NOW CLOSED. 
+
 
 
 # Guidelines for participants
